@@ -1,0 +1,50 @@
+# Dart build artifacts
+.dart_tool/
+build/
+.packages
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Documentation
+README.md
+CHANGELOG.md
+*.md
+
+# Test files
+test/
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Cache
+.cache/
+
+# Temporary files
+*.tmp
+*.temp 

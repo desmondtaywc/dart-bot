@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  dart-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dart-bot
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+    # Optional: Mount logs directory
+    volumes:
+      - ./logs:/app/logs
+    # Optional: If you need to expose port for webhooks
+    # ports:
+    #   - "8080:8080"
+    # Optional: Add health check
+    healthcheck:
+      test: [ "CMD", "ps", "aux", "|", "grep", "dart_bot" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
