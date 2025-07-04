@@ -1,10 +1,12 @@
 import 'dart:io';
 import 'package:dart_bot/terminal.dart';
+import 'package:dotenv/dotenv.dart';
 import 'package:televerse/televerse.dart';
 
 void main(List<String> arguments) async {
   // Get bot token from environment variable
-  String? botToken = Platform.environment['BOT_TOKEN'];
+  final env = DotEnv(includePlatformEnvironment: true)..load();
+  final botToken = env['BOT_TOKEN'];
 
   if (botToken == null) {
     print('Error: BOT_TOKEN environment variable is not set');
