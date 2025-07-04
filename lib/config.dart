@@ -56,6 +56,7 @@ class Config {
 
   /// Print configuration summary
   static void printSummary() {
+    print('\n⏰ Bot started at: ${DateTime.now().toString()}');
     print('🔧 Configuration loaded:');
     print('   📊 Authorized users: ${authorizedUsers.length}');
   }

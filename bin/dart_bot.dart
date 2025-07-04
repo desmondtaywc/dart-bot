@@ -1,4 +1,4 @@
-import 'package:dart_bot/bot.commands.dart';
+import 'package:dart_bot/commands/bot.commands.dart';
 import 'package:dart_bot/config.dart';
 import 'package:televerse/televerse.dart';
 

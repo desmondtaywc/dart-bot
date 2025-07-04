@@ -37,6 +37,17 @@ class AuthService {
     await handler();
   }
 
+  /// Create a protected command wrapper
+  static Future<void> Function(Context) protectedWrapper(
+    Future<void> Function(Context) handler,
+  ) {
+    return (Context ctx) async {
+      await protectedCommand(ctx, () async {
+        await handler(ctx);
+      });
+    };
+  }
+
   /// Log unauthorized access attempts
   static void logUnauthorizedAccess(Context ctx, String command) {
     print(
