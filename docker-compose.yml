@@ -9,6 +9,7 @@ services:
     restart: unless-stopped
     environment:
       - BOT_TOKEN=${BOT_TOKEN}
+      - AUTHORIZED_USERS=${AUTHORIZED_USERS}
     # Optional: Mount logs directory
     volumes:
       - ./logs:/app/logs
