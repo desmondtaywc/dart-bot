@@ -140,6 +140,12 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "dotenv",
+      "rootUri": "file:///Users/desmondtay/.pub-cache/hosted/pub.dev/dotenv-4.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
       "name": "file",
       "rootUri": "file:///Users/desmondtay/.pub-cache/hosted/pub.dev/file-7.0.1",
       "packageUri": "lib/",
@@ -446,7 +452,7 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-07-04T02:32:59.072878Z",
+  "generated": "2025-07-04T07:17:16.924171Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///Users/desmondtay/Documents/flutter",

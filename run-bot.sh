@@ -32,6 +32,9 @@ if [ ! -f ".env" ]; then
 # Telegram Bot Token - Get this from @BotFather
 BOT_TOKEN=your_bot_token_here
 
+# Authorized Users (comma-separated)
+AUTHORIZED_USERS=telegram_user_id1
+
 # Optional: If you want to use webhooks instead of polling
 # WEBHOOK_URL=https://your-domain.com/webhook
 
