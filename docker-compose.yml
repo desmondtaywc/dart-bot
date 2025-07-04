@@ -2,9 +2,7 @@ version: '3.8'
 
 services:
   dart-bot:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: bakeapple/dart-bot:latest
     container_name: dart-bot
     restart: unless-stopped
     environment:
