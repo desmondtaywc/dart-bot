@@ -6,11 +6,15 @@ services:
     container_name: dart-bot
     restart: unless-stopped
     environment:
-      - BOT_TOKEN=${BOT_TOKEN}
-      - AUTHORIZED_USERS=${AUTHORIZED_USERS}
+      - BOT_TOKEN=YOUR_BOT_TOKEN
+      - AUTHORIZED_USERS=AUTHORIZED_USERS_ID
     # Optional: Mount logs directory
     volumes:
-      - ./logs:/app/logs
+      - type: bind
+        source: ~/dart-bot/logs
+        target: /app/logs
+        bind:
+          create_host_path: true
     # Optional: If you need to expose port for webhooks
     # ports:
     #   - "8080:8080"
