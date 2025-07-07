@@ -11,7 +11,7 @@ services:
     # Optional: Mount logs directory
     volumes:
       - type: bind
-        source: ~/dart-bot/logs
+        source: /dart-bot/logs
         target: /app/logs
         bind:
           create_host_path: true
